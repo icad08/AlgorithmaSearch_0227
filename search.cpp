@@ -44,11 +44,17 @@ void LinearSearch(){
             ctr++;
             if (arr[i] == item);
             {
-                cout <<"\n" << item << "found at position" << (i + 1) << endl //step 6
+                cout <<"\n" << item << "found at position" << (i + 1) << endl; //step 6
                 break; //step 7
             }
             i++ ;//step 4
         }
+        if (i == n) //step 5
+        cout << "\n" << item  << "is not found in the array\n" <<endl;
+        cout << "\nNumber of comparisons: " << ctr << endl; // step 8
+
+        cout << "\nContinue search (y/n): "; //step 9
+        cin >> ch;
     }
 }
 
